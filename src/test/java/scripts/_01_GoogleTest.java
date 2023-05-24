@@ -1,4 +1,4 @@
-package scritps;
+package scripts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -90,11 +90,14 @@ public class _01_GoogleTest {
     @Test
     public void validateGoogleSearchButton(){
 
-        WebElement searchButton = driver.findElement(By.className("gNO89b"));
+        WebElement searchButton = driver.findElement(By.xpath("(//input[@name='btnK'])[2]"));
 
+        Assert.assertTrue(searchButton.isDisplayed());
+        System.out.println(searchButton.getAttribute("value")); // Google Search
 
+        Assert.assertEquals(searchButton.getAttribute("value"), "Google Search");
 
-
+        Assert.assertTrue(searchButton.isEnabled());
     }
 
 
