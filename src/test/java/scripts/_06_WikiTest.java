@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import utils.Waiter;
 
 public class _06_WikiTest extends Base {
     /*
@@ -28,6 +29,8 @@ public class _06_WikiTest extends Base {
 
         searchBox.sendKeys("Tesla");
         searchButton.submit();
+
+        Waiter.pause(5);
 
         WebElement mainHeader = driver.findElement(By.cssSelector("#firstHeading>span"));
 
