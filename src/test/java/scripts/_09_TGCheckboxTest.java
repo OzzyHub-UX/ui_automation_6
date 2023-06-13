@@ -1,14 +1,11 @@
 package scripts;
 
-import com.sun.xml.internal.ws.model.WrapperBeanGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.Waiter;
-
-import javax.xml.ws.WebEndpoint;
 import java.util.List;
 
 public class _09_TGCheckboxTest extends Base{
@@ -28,7 +25,7 @@ public class _09_TGCheckboxTest extends Base{
     }
 
     @Test
-    public void validateCheckboxes () {
+    public void checkboxTest () {
         List<WebElement> checkBoxLabel = driver.findElements(By.cssSelector("#checkbox-button-group_1 label"));
         List<WebElement> checkBoxInput = driver.findElements(By.cssSelector("#checkbox-button-group_1 input"));
 
@@ -62,7 +59,7 @@ public class _09_TGCheckboxTest extends Base{
      */
 
     @Test
-    public void validateCheckBoxes2 () {
+    public void checkboxTest2 () {
         List<WebElement> checkBoxLabel = driver.findElements(By.cssSelector("#checkbox-button-group_2 label"));
         List<WebElement> checkBoxInput = driver.findElements(By.cssSelector("#checkbox-button-group_2 input"));
 

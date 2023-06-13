@@ -1,6 +1,4 @@
-package PracticeAutomation;
-
-import org.testng.annotations.Test;
+package practice_automation;
 
 public class PracticeXPATH {
 

@@ -1,6 +1,5 @@
 package scripts;
 
-import com.sun.org.apache.xerces.internal.xs.datatypes.ByteList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ import utils.WindowHandler;
 import java.util.List;
 import java.util.Set;
 
-public class _14_TGWindowsTest extends Base{
+public class _14_TGMultipleWindowsTest extends Base{
 
     @BeforeMethod
     public void setPage() {

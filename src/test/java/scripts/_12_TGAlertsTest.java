@@ -3,15 +3,13 @@ package scripts;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.internal.WebElementToJsonConverter;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.AlertHandler;
 import utils.Waiter;
 
-public class _12_TGAlertTest extends Base{
+public class _12_TGAlertsTest extends Base{
 
     @BeforeMethod
     public void setPage() {

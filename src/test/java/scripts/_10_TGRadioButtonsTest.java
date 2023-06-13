@@ -1,8 +1,6 @@
 package scripts;
 
-import com.github.dockerjava.api.model.WaitResponse;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +9,7 @@ import utils.Waiter;
 
 import java.util.List;
 
-public class _10_RadioButtonsTest extends Base{
+public class _10_TGRadioButtonsTest extends Base{
 
     @BeforeMethod
     public void setPage() {

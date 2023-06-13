@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class _13IFrameTest extends Base {
+public class _13_IFrameTest extends Base {
 
     @BeforeMethod
     public void setPage(){

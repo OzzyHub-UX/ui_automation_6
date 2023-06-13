@@ -40,7 +40,7 @@ public class Driver {
             }
 
             driver.manage().window().maximize(); // Maximizes the window
-            driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS); // implicit wait
+            driver.manage().timeouts().implicitlyWait(Integer.parseInt(ConfigurationReader.getProperty("implicit_wait")), TimeUnit.SECONDS); // implicit wait
         }
         return driver;
     }
